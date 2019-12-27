@@ -17,7 +17,7 @@ yum makecache fast
 
 VERSION="$1"
 if [ -n "$VERSION" ] ; then
-    yum -y install docker-ce-"${VERSION}.ce"
+    yum -y install docker-ce-"${VERSION}"
 else
     yum -y install docker-ce
 fi
